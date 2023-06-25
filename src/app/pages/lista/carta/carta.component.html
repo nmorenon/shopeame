@@ -1,0 +1,12 @@
+<div *ngIf = "producto" >
+<h2>{{producto.name}}</h2>
+<img src="{{producto.image}}" alt="{{producto.name}}">
+<h3> {{producto.description}}</h3>
+<h3>{{producto.price}} € </h3>
+
+<button (click)="deleteProducto()"> Borrar </button>
+<button routerLink="/lista"> Volver </button>
+
+
+
+</div>

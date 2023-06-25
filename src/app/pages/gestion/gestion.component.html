@@ -1,0 +1,15 @@
+<form [formGroup]="productoForm" (ngSubmit)="onSubmit()">
+
+<input formControlName="name" placeholder="Name">
+<input formControlName="image" placeholder="Image">
+<input formControlName="price" placeholder="Price">
+<input formControlName="description" placeholder="Description">
+
+<button type="submit" [disabled]= "!productoForm.valid"> Upload </button>
+
+</form>
+<figure>
+    <img src="{{newProducto.image}}" alt="{{newProducto.name}}">
+    <figcaption> {{newProducto.name}}</figcaption>
+
+</figure>
